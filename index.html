@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF--8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/components/conteudo/imagem/Sga.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGA PMO Sistema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              sga: {
+                // Cores extraídas da SgaLogo.tsx
+                brand: "#2b6cb0", // Azul Institucional
+                accent: "#319795", // Teal/Ciano
+                dark: "#2d3748", // Cinza Escuro Logo
+
+                // Cores de Interface Corporativa (Navy/Slate theme)
+                bg: "#0f172a", // Fundo principal (Slate 950)
+                surface: "#1e293b", // Cartões (Slate 800)
+                border: "#334155", // Bordas (Slate 700)
+                text: "#94a3b8", // Texto secundário (Slate 400)
+                textLight: "#f1f5f9", // Texto principal (Slate 100)
+              },
+            },
+            backgroundImage: {
+              "sga-gradient":
+                "linear-gradient(135deg, #2b6cb0 0%, #319795 100%)",
+              "sga-gradient-hover":
+                "linear-gradient(135deg, #3182ce 0%, #38b2ac 100%)",
+              "sidebar-gradient":
+                "linear-gradient(180deg, #1e293b 0%, #0f172a 100%)",
+            },
+          },
+        },
+      };
+    </script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body
+    class="bg-sga-bg text-sga-text font-sans antialiased selection:bg-sga-brand selection:text-white"
+  >
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

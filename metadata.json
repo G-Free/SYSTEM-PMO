@@ -1,0 +1,5 @@
+{
+  "name": "SGA PMO System",
+  "description": "A Project Management Office (PMO) system for Sociedade Gestora de Aeroportos (SGA) to manage projects, tasks, and human resources. Features a dashboard, project and resource lists, and a Kanban board for tasks.",
+  "requestFramePermissions": []
+}
