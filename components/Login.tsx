@@ -46,7 +46,13 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
           }}
         ></div>
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-sga-bg via-slate-900/90 to-sga-brand/30 z-10" style="--tw-gradient-stops: var(--tw-gradient-from), rgb(232 232 232 / 90%) var(--tw-gradient-via-position), rgb(43 108 176);"></div>
+       <div
+          className="absolute inset-0 bg-gradient-to-t from-sga-bg via-slate-900/90 to-sga-brand/30 z-10"
+          style={{
+            "--tw-gradient-stops":
+              "var(--tw-gradient-from), rgb(232 232 232 / 90%) var(--tw-gradient-via-position), rgb(43 108 176)",
+          }}
+        ></div>
 
         <div className="relative z-20 flex flex-col justify-end p-16 h-full text-white">
           <div className="mb-6">
