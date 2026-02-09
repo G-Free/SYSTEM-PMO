@@ -33,7 +33,7 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
   const users = authService.getAvailableUsers();
 
   return (
-    <div className="min-h-screen bg-sga-bg flex font-sans">
+    <div className="max-h-screen bg-sga-bg flex font-sans">
       {/* Left Side - Brand & Imagery (Hidden on mobile) */}
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-slate-900">
         <div
