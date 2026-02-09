@@ -40,7 +40,7 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              'url("https://images.unsplash.com/photo-1570214476695-2cc0b34d9a30?q=80&w=2608&auto=format&fit=crop")',
+              'url("https://static.vecteezy.com/ti/fotos-gratis/t2/25524967-aeroporto-predio-internacional-terminal-correndo-pessoas-para-terra-borrado-fundo-ai-gerado-imagem-foto.jpg")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
