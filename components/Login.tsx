@@ -237,55 +237,11 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
                     Autenticando...
                   </div>
                 ) : (
-                  "Acessar Plataforma"
+                  "Acessar"
                 )}
               </button>
             </div>
           </form>
-
-          {/* Development Hints Toggle */}
-          <div className="mt-8 border-t border-sga-border pt-6">
-            <button
-              onClick={() => setShowHints(!showHints)}
-              className="flex items-center justify-center w-full text-xs text-sga-text hover:text-white transition-colors gap-2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
-              {showHints ? "Ocultar Ferramentas de Teste" : "Ambiente de Teste"}
-            </button>
-
-            {showHints && (
-              <div className="mt-4 bg-sga-surface rounded-lg p-4 border border-sga-border animate-fadeIn">
-                <p className="text-center text-xs text-sga-brand mb-3 font-mono">
-                  Senha Padrão: sga2024
-                </p>
-                <div className="space-y-2">
-                  {users.map((u) => (
-                    <button
-                      key={u.id}
-                      onClick={() => setEmail(u.email)}
-                      className="w-full flex justify-between items-center text-xs text-sga-text bg-sga-bg p-2 rounded hover:bg-slate-700 hover:text-white transition-colors border border-transparent hover:border-sga-border"
-                    >
-                      <span className="font-semibold">{u.role}</span>
-                      <span className="font-mono opacity-75">{u.email}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
         </div>
       </div>
     </div>
