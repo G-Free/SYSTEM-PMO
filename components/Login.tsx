@@ -60,7 +60,7 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
               <img src={Sgalogotipo} alt="SGA Logo" />
             </div>
             <h1 className="text-4xl font-bold tracking-tight mb-2">
-              Excelência Operacional
+              Centro Corporativo de Projetos e Inovação
             </h1>
           </div>
           <p className="text-slate-300 text-sm max-w-md leading-relaxed border-l-4 border-sga-brand pl-4">
@@ -85,11 +85,8 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
               </div>
             </div>
             <h2 className="text-3xl font-bold text-white tracking-tight">
-              Centro Corporativo de Projetos e Inovação
-            </h2>
-            <p className="mt-2 text-sm text-sga-text">
               Autenticação segura SGA
-            </p>
+            </h2>
           </div>
 
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
