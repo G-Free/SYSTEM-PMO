@@ -56,7 +56,7 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
         <div className="relative z-20 flex flex-col justify-end p-16 h-full text-white">
           <div className="mb-6">
-            <div className="h-50 max-w-100 p-8 rounded-xl flex items-center justify-center shadow-6xl shadow-white/50 mb-10">
+            <div className="h-50 w-100 p-8 rounded-xl flex items-center justify-center shadow-6xl shadow-white/50 mb-10">
               <img src={Sgalogotipo} alt="SGA Logo" />
             </div>
             <h1 className="text-4xl font-bold tracking-tight mb-2">
