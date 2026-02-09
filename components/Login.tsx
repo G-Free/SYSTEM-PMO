@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { authService } from "../services/authService";
 import { User } from "../types";
 import { SgaLogo } from "./icons/SgaLogo";
-import Sgalogotipo from "components/conteudo/imagem/sga_logo.png";
+import Sgalogotipo from "/components/conteudo/imagem/sga_logo.png";
 
 interface LoginProps {
   onLoginSuccess: (user: User) => void;
