@@ -52,6 +52,7 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
           <div className="mb-6">
             <div className="h-50 w-50 bg-white p-8 rounded-xl flex items-center justify-center shadow-6xl shadow-white/50 mb-10">
               <img src={Sgalogotipo} alt="" />
+              <img src={Sgalogotipo} alt="SGA Logo" className="h-12" />
             </div>
             <h1 className="text-4xl font-bold tracking-tight mb-2">
               Excelência Operacional
