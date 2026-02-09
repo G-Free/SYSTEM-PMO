@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { authService } from "../services/authService";
 import { User } from "../types";
 import { SgaLogo } from "./icons/SgaLogo";
+import {Sgalogotipo} from "./components/conteudo/imagemsga_logo.png";
 
 interface LoginProps {
   onLoginSuccess: (user: User) => void;
@@ -50,7 +51,7 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
         <div className="relative z-20 flex flex-col justify-end p-16 h-full text-white">
           <div className="mb-6">
             <div className="h-50 w-50 bg-white p-8 rounded-xl flex items-center justify-center shadow-6xl shadow-white/50 mb-10">
-              <img src="./components/conteudo/imagem/Sga.png" alt="" srcset="" />
+              <img src="`{Sgalogotipo}`" alt="" srcset="" />
             </div>
             <h1 className="text-4xl font-bold tracking-tight mb-2">
               Excelência Operacional
